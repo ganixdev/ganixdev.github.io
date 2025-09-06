@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/linksan-landing' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/linksan-landing/' : '',
+  // Remove basePath for root deployment - uncomment and set if deploying to a subfolder
+  // basePath: '/linksan-landing',
+  // assetPrefix: '/linksan-landing/',
 };
 
 export default nextConfig;
