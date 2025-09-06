@@ -20,7 +20,7 @@ export default function Home() {
         <div className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <div className="text-center">
-              <h1 className="text-2xl sm:text-3xl font-extrabold mb-2">Clean your links</h1>
+              <h1 className="text-2xl sm:text-3xl font-extrabold mb-2">Clean links. Faster sharing. Zero tracking.</h1>
               <p className="text-sm text-slate-600 mb-4">Remove trackers, shorten YouTube links and share clean URLs — all locally on your device.</p>
               <div className="flex gap-3 justify-center">
                 <a href="#download" className="inline-flex items-center justify-center rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 text-sm font-semibold shadow-sm">Get LinkSan</a>
@@ -119,16 +119,11 @@ export default function Home() {
       <footer className="border-t border-slate-200 py-6">
         <div className="max-w-xl mx-auto px-4 text-center text-sm text-slate-600">
           <div className="font-semibold mb-1">LinkSan</div>
-          <div className="mb-2">Protect your privacy, one link at a time.</div>
+          <div className="mb-2">No servers. No tracking. Just clean links.</div>
           <div className="flex justify-center gap-4 mb-2">
-            <a href="#" className="hover:text-indigo-600">Privacy</a>
-            <a href="#" className="hover:text-indigo-600">Terms</a>
-            <a href="#" className="hover:text-indigo-600">Contact</a>
-          </div>
-          <div className="text-xs text-slate-500 mb-2">
-            <div>Privacy policy: <a href="https://raw.githubusercontent.com/ganixdev/linksan-ios/stable/PRIVACY_POLICY.md" className="text-indigo-600">PRIVACY_POLICY.md</a></div>
-            <div>License: <a href="https://raw.githubusercontent.com/ganixdev/linksan-ios/stable/LICENSE" className="text-indigo-600">MIT</a></div>
-            <div>Contact: <a href="mailto:ghani.utf8@gmail.com" className="text-indigo-600">ghani.utf8@gmail.com</a></div>
+            <a href="/privacy" className="hover:text-indigo-600">Privacy</a>
+            <a href="/license" className="hover:text-indigo-600">License</a>
+            <a href="/contact" className="hover:text-indigo-600">Contact</a>
           </div>
           <div className="text-xs text-slate-400">© 2025 LinkSan. All rights reserved.</div>
         </div>
