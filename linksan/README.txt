@@ -1,0 +1,1 @@
+Linksan static site
