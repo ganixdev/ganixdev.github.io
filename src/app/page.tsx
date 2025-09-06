@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+  <div className="min-h-screen bg-slate-50 text-slate-900 font-mono">
       {/* Header */}
       <header className="bg-transparent">
         <div className="max-w-xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -23,8 +23,7 @@ export default function Home() {
               <h1 className="text-2xl sm:text-3xl font-extrabold mb-2">Clean your links</h1>
               <p className="text-sm text-slate-600 mb-4">Remove trackers, shorten YouTube links and share clean URLs — all locally on your device.</p>
               <div className="flex gap-3 justify-center">
-                <a href="#download" className="inline-flex items-center justify-center rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 text-sm font-semibold shadow-sm">Download for iOS</a>
-                <a href="#download" className="inline-flex items-center justify-center rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 text-sm font-semibold shadow-sm">Android (Soon)</a>
+                <a href="#download" className="inline-flex items-center justify-center rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 text-sm font-semibold shadow-sm">Get LinkSan</a>
               </div>
             </div>
             <div className="mt-5 border-t pt-4 text-xs text-slate-500">Built with privacy-first principles — no network requests, local processing, and native iOS integration.</div>
@@ -40,26 +39,50 @@ export default function Home() {
 
           <div className="space-y-3">
             <div className="flex items-start gap-3">
-              <div className="mt-1 w-9 h-9 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center">✓</div>
+              <div className="mt-1 w-9 h-9 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center">📋</div>
               <div>
-                <div className="font-semibold">Seamless integration</div>
-                <div className="text-sm text-slate-600">Sanitize & Share from the system share sheet, smart paste, and action extension.</div>
+                <div className="font-semibold">Smart Paste</div>
+                <div className="text-sm text-slate-600">Automatically detect and grab URLs from your clipboard.</div>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="mt-1 w-9 h-9 rounded-full bg-cyan-50 text-cyan-600 flex items-center justify-center">⚡</div>
+              <div className="mt-1 w-9 h-9 rounded-full bg-cyan-50 text-cyan-600 flex items-center justify-center">🔁</div>
               <div>
-                <div className="font-semibold">Advanced processing</div>
-                <div className="text-sm text-slate-600">Multi-URL support, bulk ops, and informative tracker chips.</div>
+                <div className="font-semibold">Sanitize from any app</div>
+                <div className="text-sm text-slate-600">Use the share sheet or the Action Extension to clean URLs from anywhere.</div>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="mt-1 w-9 h-9 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center">🔒</div>
+              <div className="mt-1 w-9 h-9 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center">⬇️</div>
               <div>
-                <div className="font-semibold">Privacy first</div>
-                <div className="text-sm text-slate-600">Local processing only, no network requests or analytics.</div>
+                <div className="font-semibold">Pull-to-refresh</div>
+                <div className="text-sm text-slate-600">Instant content updates with a natural gesture.</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-9 h-9 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center">🏷️</div>
+              <div>
+                <div className="font-semibold">Informative tracker chips</div>
+                <div className="text-sm text-slate-600">Visual categories for trackers with tap-to-learn details.</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-9 h-9 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">📦</div>
+              <div>
+                <div className="font-semibold">Multi-URL support</div>
+                <div className="text-sm text-slate-600">Process entire lists of URLs at once for bulk operations.</div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-9 h-9 rounded-full bg-slate-50 text-slate-700 flex items-center justify-center">�</div>
+              <div>
+                <div className="font-semibold">Fully local & no tracking</div>
+                <div className="text-sm text-slate-600">All processing happens on-device — no analytics, no network requests.</div>
               </div>
             </div>
           </div>
@@ -72,21 +95,21 @@ export default function Home() {
           <h2 className="text-lg font-bold mb-2">Get LinkSan</h2>
           <p className="text-sm text-slate-600 mb-4">Install on iOS for native share-sheet support. Android support is coming soon.</p>
 
-          <div className="grid gap-3">
+          <div className="grid sm:grid-cols-2 gap-3">
             <div className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-between">
               <div>
                 <div className="font-semibold">iOS App</div>
-                <div className="text-sm text-slate-600">Available on the App Store — action extension & smart paste.</div>
+                <div className="text-sm text-slate-600">Action Extension, Smart Paste, and native share-sheet support.</div>
               </div>
-              <a href="https://apps.apple.com/app/linksan" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm">App Store</a>
+              <a href="https://apps.apple.com/app/linksan" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm">Download</a>
             </div>
 
             <div className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-between">
               <div>
                 <div className="font-semibold">Android</div>
-                <div className="text-sm text-slate-600">Planned: Google Play release with parity features.</div>
+                <div className="text-sm text-slate-600">APK / Play store coming soon — same privacy-first behavior.</div>
               </div>
-              <button disabled className="bg-slate-300 text-slate-700 px-4 py-2 rounded-lg text-sm">Coming Soon</button>
+              <a href="#" className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-lg text-sm">Download</a>
             </div>
           </div>
         </div>
@@ -101,6 +124,11 @@ export default function Home() {
             <a href="#" className="hover:text-indigo-600">Privacy</a>
             <a href="#" className="hover:text-indigo-600">Terms</a>
             <a href="#" className="hover:text-indigo-600">Contact</a>
+          </div>
+          <div className="text-xs text-slate-500 mb-2">
+            <div>Privacy policy: <a href="https://raw.githubusercontent.com/ganixdev/linksan-ios/stable/PRIVACY_POLICY.md" className="text-indigo-600">PRIVACY_POLICY.md</a></div>
+            <div>License: <a href="https://raw.githubusercontent.com/ganixdev/linksan-ios/stable/LICENSE" className="text-indigo-600">MIT</a></div>
+            <div>Contact: <a href="mailto:ghani.utf8@gmail.com" className="text-indigo-600">ghani.utf8@gmail.com</a></div>
           </div>
           <div className="text-xs text-slate-400">© 2025 LinkSan. All rights reserved.</div>
         </div>
