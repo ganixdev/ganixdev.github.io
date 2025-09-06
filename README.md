@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkSan Landing Page
+
+A modern, responsive landing page for LinkSan - a privacy-focused URL sanitizer app available for iOS and Android.
+
+## About LinkSan
+
+LinkSan removes tracking parameters from URLs and shortens YouTube links to protect your privacy. The app features seamless share sheet integration and is designed for both iOS and Android platforms.
+
+## Features
+
+- **Remove Trackers**: Automatically removes UTM parameters and other tracking codes
+- **YouTube URL Shortening**: Converts long YouTube URLs to clean youtu.be links
+- **Share Sheet Integration**: Seamlessly sanitize links from any app
+- **Cross-Platform**: Available for both iOS and Android devices
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: Ready for GitHub Pages or Vercel
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) to view the landing page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+└── components/
+    └── (future components)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is optimized for deployment on:
+- GitHub Pages
+- Vercel
+- Netlify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+This is the landing page for LinkSan. For the main app development, see the [LinkSan iOS repository](https://github.com/ganixdev/linksan-ios).
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 LinkSan. All rights reserved.

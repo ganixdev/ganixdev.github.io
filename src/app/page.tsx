@@ -1,102 +1,151 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <div className="flex items-center">
+              <div className="text-2xl font-bold text-blue-600">LinkSan</div>
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#features" className="text-gray-700 hover:text-blue-600">Features</a>
+              <a href="#download" className="text-gray-700 hover:text-blue-600">Download</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-600">About</a>
+            </nav>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Clean Your Links,<br />
+              <span className="text-blue-600">Protect Your Privacy</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              LinkSan removes tracking parameters from URLs and shortens YouTube links.
+              Available for iOS and Android devices.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#download"
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Download for iOS
+              </a>
+              <a
+                href="#download"
+                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+              >
+                Download for Android (Coming Soon)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Powerful Features</h2>
+            <p className="text-gray-600">Everything you need to keep your links clean and private</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Remove Trackers</h3>
+              <p className="text-gray-600">Automatically removes UTM parameters and other tracking codes from your URLs</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Shorten YouTube URLs</h3>
+              <p className="text-gray-600">Converts long YouTube URLs to clean, shareable youtu.be links</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Share Sheet Integration</h3>
+              <p className="text-gray-600">Seamlessly sanitize links from any app using the iOS share sheet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Download Section */}
+      <section id="download" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Get LinkSan</h2>
+            <p className="text-gray-600">Download now and start protecting your privacy</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="text-center">
+                <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">iOS App</h3>
+                <p className="text-gray-600 mb-4">Available on the App Store</p>
+                <a
+                  href="https://apps.apple.com/app/linksan"
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
+                >
+                  Download on App Store
+                </a>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="text-center">
+                <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.523 15.3414c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm-11.046 0c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm11.046-5.9983c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm-11.046 0c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm0-5.9983c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm11.046 0c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Android App</h3>
+                <p className="text-gray-600 mb-4">Coming Soon to Google Play</p>
+                <button
+                  disabled
+                  className="bg-gray-400 text-white px-6 py-2 rounded-lg font-semibold cursor-not-allowed"
+                >
+                  Coming Soon
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="text-2xl font-bold mb-4">LinkSan</div>
+            <p className="text-gray-400 mb-8">Protect your privacy, one link at a time.</p>
+            <div className="flex justify-center space-x-6">
+              <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-white">Contact</a>
+            </div>
+            <p className="text-gray-500 text-sm mt-8">© 2025 LinkSan. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
